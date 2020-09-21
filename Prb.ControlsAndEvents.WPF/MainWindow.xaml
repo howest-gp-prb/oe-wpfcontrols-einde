@@ -1,0 +1,26 @@
+﻿<Window x:Class="Prb.ControlsAndEvents.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prb.ControlsAndEvents.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="482" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="All about the GUI" HorizontalAlignment="Center" Height="36" VerticalAlignment="Top" Width="462" Background="#FFF7D1D1" FontSize="18"/>
+        <Label Content="Lesuur : " HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="Dag van de week : " HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="Naam module : " HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtLesuur" HorizontalAlignment="Left" Height="26" Margin="144,56,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDagVanDeWeek"  HorizontalAlignment="Left" Height="26" Margin="144,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNaamModule"  HorizontalAlignment="Left" Height="26" Margin="144,144,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="tbkSamenvatting" HorizontalAlignment="Center" Margin="0,180,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="462" Height="123"  Background="#FFF7D1D1" />
+        <Button x:Name="btnVatSamen1" Content="Vat samen 1" HorizontalAlignment="Left" Height="69" Margin="10,319,0,0" VerticalAlignment="Top" Width="150" Click="btnVatSamen1_Click"/>
+        <Button x:Name="btnVatSamen2"  Content="Vat samen 2" HorizontalAlignment="Left" Height="69" Margin="165,319,0,0" VerticalAlignment="Top" Width="150" Click="btnVatSamen2_Click"/>
+        <Button x:Name="btnVatSamen3"  Content="Vat samen 3" HorizontalAlignment="Left" Height="69" Margin="320,319,0,0" VerticalAlignment="Top" Width="150" Click="btnVatSamen3_Click"/>
+        <ComboBox x:Name="cmbLesuur" HorizontalAlignment="Left" Height="26" Margin="269,56,0,0" VerticalAlignment="Top" Width="126" SelectionChanged="cmbLesuur_SelectionChanged"/>
+        <ComboBox x:Name="cmbDagVanDeWeek" HorizontalAlignment="Left" Height="26" Margin="269,102,0,0" VerticalAlignment="Top" Width="126" SelectionChanged="cmbDagVanDeWeek_SelectionChanged"/>
+        <ComboBox x:Name="cmbNaamModule" HorizontalAlignment="Left" Height="26" Margin="269,144,0,0" VerticalAlignment="Top" Width="126" SelectionChanged="cmbNaamModule_SelectionChanged"/>
+
+    </Grid>
+</Window>
